@@ -1,0 +1,842 @@
+  @font-face {
+    font-family: 'Museo Slab';
+    src: url('./Museo Slab Font/Museo_Slab_500.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  body {
+    background-color: #FFFFFF;
+    color: #333;
+    font-family: 'Museo Slab', serif;
+    background-image: url('./overlay-point.svg'), url('./map.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 30px auto, 700px auto;
+    background-position: top 400px right 450px, top right;
+    background-attachment: fixed, relative;
+  }
+
+
+
+
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar {
+    background: transparent;
+    border-bottom: #F4F4F4 solid 3px;
+    opacity: 1;
+    padding: 2px 0;
+
+  }
+
+  .logo {
+      border: #E4E4E4 solid 1px;
+      background-color: #E4E4E4;
+      padding: 10px 15px;
+      font-size: 15px;
+      font-weight: bold;
+      color: #3C3C3C;
+      text-align: center;
+      align-items: center;
+      height: fit-content;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 13px;
+    color: #3C3C3C;
+  }
+
+
+
+
+  .contact-page {
+      max-width: 1200px;
+      margin: auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+      justify-content: space-between;
+          /* align-items: center; */
+          
+    gap: 50px;
+    padding: 40px 0;
+  }
+
+  .contact-form, #enquiryForm {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    padding: 30px 0;
+    /* border: #333 solid 1px; */
+  }
+
+  .contact-form h2 {
+    
+    font-family: 'Museo Slab', serif;
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: normal;
+    letter-spacing: 0;
+    color: #3C3C3C;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .contact-form p {
+    font-size: 22px;
+    letter-spacing: 0;
+    color: #646464;
+    margin-bottom: 60px;
+    width: 450px;
+  }
+
+  #enquiryForm form h3 {
+    font-size: 26px;
+    font-weight: lighter  ;
+    letter-spacing: 0px;
+    color: #3971B1;
+    margin-bottom: 20px;
+  }
+
+  #enquiryForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+
+  #enquiryForm input {
+    margin-top: 6%;
+    margin-right:60px;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #D3D3D3;
+    color: #8E8E8E;
+  }
+
+  #enquiryForm input:focus {
+      font-weight: normal;
+      outline: none;
+      border-bottom: 1px solid #3971B1;
+      color: #3C3C3C;
+  }
+
+
+
+  #enquiryForm button {
+    margin-top: 6%;
+    margin-right: 60px;
+    padding: 10px 26px;
+    background: #3971B1;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    font-weight: lighter;
+    font-family: 'Museo Slab', serif;
+  }
+  .contact-info {
+    
+    flex: 1;
+    padding-top: 38%;
+    align-self: flex-end;
+    border-left: #EAEAEA solid 1px;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info p, .label-sale{
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #8E8E8E;
+    font-style: normal;
+    font-weight: lighter;
+    letter-spacing: 0px;
+  }
+  .contact-info p#contact-description {
+    width: 479px;
+    font-size: 28px;
+    color: #383838;
+  }
+
+  .contact-info p#main-contact {
+    font-size: 16px;
+    color: #8E8E8E;
+    font-style: normal;
+    font-weight: lighter;
+    letter-spacing: 0px;
+  }
+
+  .contact-info strong,
+  .contact-infO strong{
+    font-size: 26px;
+    color: #3971B1;
+    font-weight:lighter;
+    letter-spacing: 0px;
+    padding-bottom: 20px;
+  }
+
+  footer {
+    background: #F4F4F4 ;
+    padding: 60px 60px;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .footer-grid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .footer-grid .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    font-size: 14px;
+    color: #383838;
+  }
+
+  .subscribe-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  #subscribe-title {
+    font-size: 22px;
+    color: #818181;
+    font-weight: lighter  ;
+  }
+  #subscribe-email {
+    width: 150%;
+    padding: 10px 16px;
+    font-size: 14px;
+    border: 1px solid #D3D3D3;
+    color: #8E8E8E;
+    background: #FFFFFF ;
+  }
+
+  #subscribe-button {
+    padding: 10px 20px;
+    background: #3971B1;
+    font-family: 'Museo Slab', serif;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  .top-button {
+    position: relative; 
+    top: 20px;
+    text-align: center;
+    align-self: center;
+    left: 60px;
+    z-index: 1000;
+    font-size: 12px;
+  }
+  #top-button {
+    padding: 7px 14px;
+    background: #3971B1;
+    font-family: 'Museo Slab', serif;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+  .footer-bottom {
+    border-top: #EAEAEA solid 1px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    padding-top: 30px;
+    color: #818181;
+    font-size: 14px;
+  }
+
+
+  .social-icons a {
+    color: #818181;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 22px;
+  }
+
+
+
+
+
+
+
+
+
+  .custom-select-wrapper {
+    margin-top:6%;
+    margin-right:60px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #D3D3D3;
+    color: #8E8E8E;
+  }
+
+  .custom-select{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  .selected-option {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } 
+
+  .arrow {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #2f4ea0;
+  }
+
+  .custom-select:hover .arrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+  .custom-select .options {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .option {
+    padding: 14px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FAFAFA;
+    align-items: center;
+  }
+  .option:hover {
+    background-color: #f0f0f0;
+  }
+
+  .checkmark {
+    display: none;
+    margin-left: 10px;
+  }
+
+  .selected .checkmark {
+    display: block;  
+    color: #2f4ea0;
+    font-size: 16px;
+  }
+  .checkmark {
+    font-weight: bold;
+  }
+
+  .custom-select:hover .options {
+    display: block;
+    
+  }
+
+  .custom-select-wrapper.selected-info {
+    display: none;
+  }
+
+
+  .error-message {
+    margin-top: 2%;
+    color: red;
+    font-size: 10px;
+    display: block;
+    font-family: Arial, sans-serif;
+  }
+
+  /* .form-button{
+    display: none;
+  } */
+  .label-info{
+    display: none;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .close-btn{
+    display: none;
+  }
+
+  .modal, .form-button {
+    display: none;
+  }
+
+  @media (max-width: 1020px) {
+
+   body {
+        background-position: top 20% left 40%, top right 90%;
+        background-size: 40px auto, 120%;
+    }
+   
+  .hamburger {
+    display: block;
+    z-index: 10;
+    cursor: pointer;
+    /* padding: 10px; */
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0; 
+    right: 0;
+    padding: 90px 20px;
+    border-left: 1px solid #eee;
+    box-shadow: -8px 0 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 0 0 10px;
+    opacity: 0;
+    transform: translateX(0px); 
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 12px 0;
+    transition:  0.3s;
+    width: 100%;
+  }
+
+  .nav-links a:hover {
+    background-color: #3971B1;
+    color: #fff;
+    padding-left: 10px;
+    border-radius: 10px;
+  }
+
+  .menu-toggle:checked + .hamburger + .nav-links {
+    opacity: 1;
+    transform: translateX(0); 
+    pointer-events: auto;
+  }
+
+
+
+  .modal {
+    display: none; 
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0%;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+  }
+
+  .modal-content {
+    background-color: #FFFFFF;
+    padding-top: 200px;
+    padding-left:16px;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: fadeIn 0.3s ease-out;
+    /* border: #3C3C3C solid 2px; */
+  }
+
+  #enquiryForm h3{
+    font-size: 24px;
+    margin-left: 6%;
+
+  }
+
+  .error-message{
+    margin-top: 3%;
+    margin-left: 6%;
+  }
+  #enquiryForm button {
+    margin-top: 60px;
+    margin-right: 6%;
+    width: 90%;
+  }
+
+  #enquiryForm input {
+    margin-top: 6%;
+    width: 85%;
+    
+    margin-right: 0px;
+  }
+
+  .custom-select-wrapper{
+        margin-top: 6%;
+        margin-left: 10px;
+        margin-right: 0%;
+        width: 90%;
+  }
+
+  @keyframes fadeIn {
+    from {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .close-btn {
+    display: block;
+    position: absolute;
+    top: 140px; 
+    right: 30px;
+    font-size: 36px;
+    cursor: pointer;
+  }
+
+  form input,
+  form button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 12px;
+    font-size: 16px;
+  } 
+
+
+
+
+
+    .contact-page {
+      max-width: 600px;
+      flex-direction: column;
+    }
+    .contact-form{
+      display: none;
+    }
+    .contact-info{
+      padding-left: 0%;
+      padding-top: 0%;
+      border: none;
+      align-self: center;
+    }
+    .contact-info p#contact-description {
+      width: 500px;
+      font-size: 36px;
+    }
+    .label-sale{
+        display: flex;
+        margin: auto 0%;
+        justify-content: space-between;
+        padding: 30px 0px;
+        border-bottom: #333 solid 1px;
+        color: #383838;
+        font-size: 22px;
+    }
+
+    .label-info{
+      display: flex;
+      color: #8E8E8E;
+    }
+
+    .contact-info p#main-contact {
+      font-size: 20px;
+      width: 80%;
+    }
+
+      .form-button{
+        display: block;
+        padding-top: 70%;
+        padding-bottom: 5%;
+        text-align: center;
+        align-items: center;
+
+      }
+      #enquiry-form{
+        width: 90%;
+        padding: 20px 20px;
+        background: #3971B1;
+        font-family: 'Museo Slab', serif;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: lighter;
+      }
+      .contact-info strong, .contact-infO strong {
+        font-size: 36px;
+        margin-top: 50px;
+      }
+
+      .footer-grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin: 0% 10%;
+      }
+      footer{
+        padding: 10% 8%;
+      }
+
+      .top-button{
+        display: none;
+      }
+      .subscribe-section{
+        display: flex;
+        width: 100%;
+        padding-bottom: 10%;
+      }
+      #subscribe-title{
+        font-size: 32px;
+      }
+      #subscribe-email{
+        width: 90%;
+      }
+      #subscribe-button{
+        width: 98%;
+        font-size: 22px;
+      }
+      .footer-grid .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+        gap: 30px 10rem;
+        justify-items: baseline;
+        text-align: left;
+        align-self: center;
+        padding-bottom: 10%;
+        font-size: 20px;
+      }
+      
+      .logo{
+        align-self: center;
+
+      }
+      
+
+      .footer-bottom{
+          margin-top: 10px;
+          padding: 0%;
+          margin:6% 10% 0% 10%;
+          flex-direction: column;
+          align-items: center;
+      }
+      .footer-bottom p{
+        padding-top: 6%;
+        font-size: 16px;
+      }
+      .social-icons{
+        display: inline-block;
+        padding-top: 6%;
+      }
+      .social-icons a{
+        margin: 0% 0%;
+        padding: 0px 30px;
+        font-size: 36px;
+      }
+      
+      .footer-bottom p:nth-child(2) {
+        order: 3;
+      }
+  }
+
+  @media (max-width: 600px) {
+  
+     body {
+    background-position: top 24% left 54%, top right 110%;
+    background-size: 40px auto, 160%;
+  }
+
+  .form-button {
+      padding-top: 76%;
+    }
+    .contact-page {
+      max-width: max-content;
+      padding: 10%;
+      flex-direction: column;
+    }
+    
+
+    .contact-info p#contact-description {
+      width: 100%;
+      font-size: 28px;
+    }
+
+    .label-sale {
+      font-size: 18px;
+      padding: 20px 0;
+    }
+
+    .label-info {
+      font-size: 14px;
+    }
+
+    .contact-info p#main-contact {
+      font-size: 16px;
+      width: 100%;
+    }
+
+    
+
+    #enquiry-form {
+      width: 95%;
+      font-size: 14px;
+      padding: 16px 16px;
+    }
+
+    .contact-info strong, .contact-infO strong {
+      font-size: 28px;
+    }
+
+    .footer-grid {
+      margin: 0% 5%;
+    }
+
+    footer {
+      padding: 10% 5%;
+    }
+
+    .subscribe-section {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #subscribe-title {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    #subscribe-email {
+      width: 100%;
+      font-size: 16px;
+    }
+
+    #subscribe-button {
+      width: 100%;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .footer-grid .footer-links {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 6rem;
+      padding-bottom: 8%;
+      font-size: 16px;
+    }
+
+    .footer-bottom {
+      margin-top: 10px;
+      padding: 0%;
+      margin:6% 10% 0% 10%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-bottom p{
+      padding-top: 10%;
+      text-align: center;
+    }
+
+    .social-icons{
+        display: inline-block;
+        padding-top:10%;
+      }
+      .social-icons a{
+        margin: 0% 0%;
+        padding: 0px 20px;
+        font-size: 36px;
+      }
+    
+  }
+
+
+  
+   @media (max-width: 700px) {
+  
+       body {
+        background-position: top 24% left 54%, top right 90%;
+        background-size: 40px auto, 160%;
+    }
+
+  .form-button {
+      padding-top: 90%;
+    }
+
+  }
+
+ @media (max-width: 450px) {
+  
+       body {
+        background-position: top 24% left 54%, top right 90%;
+        background-size: 40px auto, 180%;
+    }
+
+  .form-button {
+      padding-top: 70%;
+    }
+
+  }
+
+
+   @media (max-width: 400px) {
+  
+       body {
+       background-size: 40px auto, 210%;
+    }
+
+  .form-button {
+      padding-top: 100%;
+    }
+
+  }

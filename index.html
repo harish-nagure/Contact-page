@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">LOGO</div>
+
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+      <img src="icon.svg" alt="menu icon" />
+      </label>
+      <nav class="nav-links">
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+        <a href="#">Key Areas</a>
+        <a href="#">News & Thoughts</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contact-page">
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <p>When we aren't changing landscapes, we're making headlines.</p>
+      
+      <!-- <div id="enquiryModal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span> -->
+
+            <form id="enquiryForm">
+              <h3>Send us an Enquiry</h3>
+              <input type="text" placeholder="Name" id="name" value=""  />
+              <span id="nameError" class="error-message"></span>
+
+              <input type="email" placeholder="Email Address" id="email"  />
+              <span id="emailError" class="error-message"></span>
+
+              <input type="tel" placeholder="Mobile Number" id="mobile"    />
+              <span id="mobileError" class="error-message"></span>
+
+
+              <div class="custom-select-wrapper">
+                <div class="custom-select" id="select-box">
+                  <div class="selected-option">
+                    <span>Query Type</span>
+                    <span class="arrow"></span>
+                  </div>
+                  <div class="options">
+                    <div class="option" data-value="Projects">
+                      Projects <span class="checkmark"><i class="fas fa-check-circle"></i></span>
+                    </div>
+                    <div class="option" data-value="Media">
+                      Media <span class="checkmark"><i class="fas fa-check-circle"></i></span>
+                    </div>
+                    <div class="option" data-value="Career">
+                      Career <span class="checkmark"><i class="fas fa-check-circle"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span id="queryError" class="error-message"></span>
+
+              <div class="custom-select-wrapper selected-info">
+                <div class="custom-select" id="detail-select">
+                  
+                  <div class="selected-option">
+                    <span></span>
+                    <span class="arrow"></span>
+                  </div>
+                  <div class="options">
+                    
+                  </div>
+                  
+                </div>
+              </div>
+              <span id="detailError" class="error-message"></span>
+              
+              <button type="submit">Send</button>
+            </form>
+         
+
+    </section>
+
+
+    
+    <section class="contact-info">
+      
+      <p id="contact-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonumy.</p>
+      <p id="main-contact">+91 000 0000 000 | test1@gmail.com | test2@gmail.com</p>
+      <div class="form-button">
+        <button id="enquiry-form">Send us an Enquiry</button>
+
+      </div>
+      <strong>Sales Enquiry</strong> 
+      <div class="label-sale"><span class="label-info">Phone</span> <span>+91 000 0000 000</span></div><div class="label-sale"><span class="label-info">Email</span> <span>test1@gmail.com</span></div>
+      <strong>Redevelopment Centre</strong>
+      <div class="label-sale"><span class="label-info">Phone</span> <span>+91 000 0000 000</span></div><div class="label-sale"><span class="label-info">Email</span> <span>test2@gmail.com</span></div>
+      
+    </section>
+
+    <div id="enquiryModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <div id="enquiryFormContainer"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="logo">LOGO</div>
+      <div class="footer-links">
+
+        <p>Projects</p>
+        <p>About</p>
+        <p>NRI Area</p>
+        <p>News & Thoughts</p>
+        <p>Employee Corner</p>
+        <p>CSR</p>
+        <p>Contact</p>
+        <p>Disclaimer</p>
+      </div>
+
+      <div class="subscribe-section">
+        <p id="subscribe-title"><strong>Get the latest news</strong></p>
+        <!-- <input id="subscribe-email" type="email" placeholder="Enter email" /> -->
+        <input type="email" placeholder="Email Address" id="subscribe-email"  />
+        <span id="subemailError" class="error-message"></span>
+        <button id="subscribe-button">Subscribe</button>
+      </div>
+
+      <div class="top-button">
+        <button id="top-button">↑</button>
+        <p>To the top</p>
+      </div>
+
+
+    </div>
+    <div class="footer-bottom">
+      <p>An ISO 9001:2008 Certified Company</p>
+      <p>© copyrights 2019</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
