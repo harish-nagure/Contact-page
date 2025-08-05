@@ -728,6 +728,12 @@
     }
 
     
+        #enquiryForm input {
+        width: 80%;
+    }
+    .custom-select-wrapper {
+        width: 85%;
+    }
 
     #enquiry-form {
       width: 95%;
