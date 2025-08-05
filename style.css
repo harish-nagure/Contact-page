@@ -794,7 +794,7 @@
       }
       .social-icons a{
         margin: 0% 0%;
-        padding: 0px 20px;
+        padding: 0px 14px;
         font-size: 36px;
       }
     
@@ -825,11 +825,15 @@
   .form-button {
       padding-top: 70%;
     }
+    
+      .social-icons a{
+        padding:0px 5px;
+      }
 
   }
 
 
-   @media (max-width: 400px) {
+   @media (max-width: 350px) {
   
        body {
        background-size: 40px auto, 210%;
@@ -838,5 +842,13 @@
   .form-button {
       padding-top: 100%;
     }
+    .social-icons a{
+        padding: 5px;
+      }
 
+  }
+
+
+    @media (max-width: 450px) {
+  
   }
