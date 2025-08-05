@@ -244,7 +244,7 @@
 
   footer {
     background: #F4F4F4 ;
-    padding: 60px 60px 20px 60px;
+    padding: 60px 100px 20px 100px;
     align-items: center;
     height: fit-content;
   }
@@ -252,6 +252,7 @@
   .footer-grid {
     display: flex;
     justify-content: space-between;
+      
     align-items: flex-start;
   }
 
@@ -304,7 +305,7 @@
 
     text-align: center;
     align-self: center;
-    left: 0px;
+    left: -10px;
     z-index: 1000;
     font-size: 12px;
   }
