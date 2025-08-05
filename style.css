@@ -1,9 +1,31 @@
   @font-face {
-    font-family: 'Museo Slab';
-    src: url('./Museo Slab Font/Museo_Slab_500.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'Museo Slab';
+  src: url('./Museo Slab Font/Museo_Slab_300.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Slab';
+  src: url('./Museo Slab Font/Museo_Slab_500.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Slab';
+  src: url('./Museo Slab Font/Museo_Slab_700.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Slab';
+  src: url('./Museo Slab Font/Museo_Slab_500_Italic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
 
   * {
     margin: 0;
@@ -47,13 +69,15 @@
       border: #E4E4E4 solid 1px;
       background-color: #E4E4E4;
       padding: 10px 15px;
-      font-size: 15px;
-      font-weight: bold;
+      font-size: 13px;
       color: #3C3C3C;
       text-align: center;
       align-items: center;
       height: fit-content;
-  }
+      font-family: 'Museo Slab', serif;
+      font-weight: 500;
+    }
+    
 
   .nav-links {
     display: flex;
@@ -64,7 +88,8 @@
   .nav-links a {
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: normal;
+    font-family: 'Museo Slab', serif;
+    font-weight: 500;
     font-size: 13px;
     color: #3C3C3C;
   }
@@ -98,7 +123,7 @@
     font-family: 'Museo Slab', serif;
     font-size: 36px;
     line-height: 54px;
-    font-weight: normal;
+    font-weight: 300;
     letter-spacing: 0;
     color: #3C3C3C;
     text-align: left;
@@ -111,11 +136,12 @@
     color: #646464;
     margin-bottom: 60px;
     width: 450px;
+    font-weight: 100;
   }
 
-  #enquiryForm form h3 {
+  #enquiryForm h3 {
     font-size: 26px;
-    font-weight: lighter  ;
+    font-weight: 300;
     letter-spacing: 0px;
     color: #3971B1;
     margin-bottom: 20px;
@@ -149,6 +175,8 @@
 
 
   #enquiryForm button {
+    width: 150px;
+    height: 45px;
     margin-top: 6%;
     margin-right: 60px;
     padding: 10px 26px;
@@ -158,9 +186,10 @@
     border: none;
     cursor: pointer;
     align-self: flex-end;
-    font-weight: lighter;
+    font-weight: 100;
     font-family: 'Museo Slab', serif;
   }
+
   .contact-info {
     
     flex: 1;
@@ -172,25 +201,32 @@
     flex-direction: column;
   }
 
-  .contact-info p, .label-sale{
-    margin-bottom: 40px;
+
+  .label-sale{
+    margin-bottom: 16px;
     font-size: 16px;
     color: #8E8E8E;
     font-style: normal;
     font-weight: lighter;
     letter-spacing: 0px;
   }
+
+
   .contact-info p#contact-description {
+    margin-bottom: 40px;
     width: 479px;
     font-size: 28px;
     color: #383838;
+    font-weight: 300;
   }
 
   .contact-info p#main-contact {
+    /* margin-bottom: 30px; */
     font-size: 16px;
     color: #8E8E8E;
     font-style: normal;
-    font-weight: lighter;
+  
+    font-weight: 100;
     letter-spacing: 0px;
   }
 
@@ -198,21 +234,22 @@
   .contact-infO strong{
     font-size: 26px;
     color: #3971B1;
-    font-weight:lighter;
+    font-weight: 300;
     letter-spacing: 0px;
     padding-bottom: 20px;
+    padding-top: 40px;
   }
 
   footer {
     background: #F4F4F4 ;
-    padding: 60px 60px;
+    padding: 60px 60px 20px 60px;
     align-items: center;
     height: fit-content;
   }
 
   .footer-grid {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
   }
 
@@ -223,6 +260,7 @@
     gap: 16px;
     font-size: 14px;
     color: #383838;
+    font-weight: 100;
   }
 
   .subscribe-section {
@@ -232,15 +270,15 @@
     gap: 16px;
   }
   #subscribe-title {
-    font-size: 22px;
+    font-size: 20px;
     color: #818181;
-    font-weight: lighter  ;
+    font-weight: 300;
   }
   #subscribe-email {
     width: 150%;
     padding: 10px 16px;
     font-size: 14px;
-    border: 1px solid #D3D3D3;
+    border: 0px solid #D3D3D3;
     color: #8E8E8E;
     background: #FFFFFF ;
   }
@@ -253,16 +291,24 @@
     border: none;
     cursor: pointer;
     font-size: 12px;
-    font-weight: lighter;
+    font-weight: 500;
+    width: 130px;
+    height: 40px;
   }
+
   .top-button {
     position: relative; 
-    top: 20px;
+    top: 100px;
+
     text-align: center;
     align-self: center;
-    left: 60px;
+    left: 0px;
     z-index: 1000;
     font-size: 12px;
+  }
+  .top-button p{
+    margin-top: 10px;
+    font-size: 14px;
   }
   #top-button {
     padding: 7px 14px;
@@ -274,22 +320,29 @@
     border-radius: 4px;
     font-size: 18px;
     font-weight: lighter;
+    text-align: center;
+    align-self: center;
+    width: 45px;
+    height: 45px;
   }
 
   .footer-bottom {
     border-top: #EAEAEA solid 1px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 40px;
     padding-top: 30px;
     color: #818181;
     font-size: 14px;
+    /* font-family: Helvetica; */
+    font-weight: 100;
+    
   }
-
 
   .social-icons a {
     color: #818181;
-    margin-left: 10px;
+    /* margin-left: 10  px; */
+    padding: 0px 10px;
     text-decoration: none;
     font-size: 22px;
   }
@@ -371,7 +424,7 @@
     font-size: 16px;
   }
   .checkmark {
-    font-weight: bold;
+    font-weight: 100;
   }
 
   .custom-select:hover .options {
@@ -383,11 +436,21 @@
     display: none;
   }
 
-
+  .responsive-note{
+     display: block;
+  font-weight: 300;
+  font-size: 12px;
+  position: relative;
+  top: 0px;
+  right: 8%;
+  color: #AFAFAF;
+  text-align: right;
+  margin-top: 10px;
+  }
   .error-message {
     margin-top: 2%;
-    color: red;
-    font-size: 10px;
+    color: rgb(239 53 53);
+    font-size: 12px;
     display: block;
     font-family: Arial, sans-serif;
   }
@@ -422,7 +485,9 @@
         background-position: top 20% left 40%, top right 90%;
         background-size: 40px auto, 120%;
     }
-   
+   .responsive-note {
+    display: none;
+  }
   .hamburger {
     display: block;
     z-index: 10;
@@ -470,32 +535,30 @@
   }
 
 
-
   .modal {
-    display: none; 
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    right: 0%;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    /* padding: 10px; */
-  }
+  display: none; 
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
 
-  .modal-content {
-    background-color: #FFFFFF;
-    padding-top: 200px;
-    padding-left:16px;
-    border-radius: 12px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    animation: fadeIn 0.3s ease-out;
-    /* border: #3C3C3C solid 2px; */
-  }
+.modal-content {
+  background-color: #FFFFFF;
+  padding: 30px 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-height: 90vh;          
+  overflow-y: auto;          
+  position: relative;
+  animation: fadeIn 0.3s ease-out;
+  scroll-behavior: smooth;
+}
+
 
   #enquiryForm h3{
     font-size: 24px;
@@ -519,6 +582,9 @@
     
     margin-right: 0px;
   }
+  #enquiryForm h3 {
+        display: none;
+    }
 
   .custom-select-wrapper{
         margin-top: 6%;
@@ -541,7 +607,7 @@
   .close-btn {
     display: block;
     position: absolute;
-    top: 140px; 
+    top: 10px; 
     right: 30px;
     font-size: 36px;
     cursor: pointer;
@@ -617,7 +683,7 @@
       }
       .contact-info strong, .contact-infO strong {
         font-size: 36px;
-        margin-top: 50px;
+        /* margin-top: 50px; */
       }
 
       .footer-grid {
@@ -636,7 +702,8 @@
       .subscribe-section{
         display: flex;
         width: 100%;
-        padding-bottom: 10%;
+        padding-bottom: 16%;
+        font-family: sans-serif
       }
       #subscribe-title{
         font-size: 32px;
@@ -657,6 +724,7 @@
         align-self: center;
         padding-bottom: 10%;
         font-size: 20px;
+        font-family: sans-serif
       }
       
       .logo{
@@ -710,11 +778,11 @@
 
     .contact-info p#contact-description {
       width: 100%;
-      font-size: 28px;
+      font-size: 22px;
     }
 
     .label-sale {
-      font-size: 18px;
+      font-size: 14px;
       padding: 20px 0;
     }
 
@@ -736,13 +804,15 @@
     }
 
     #enquiry-form {
-      width: 95%;
-      font-size: 14px;
-      padding: 16px 16px;
+      font-size: 12px;
+        padding: 16px 16px;
+        width: 100%;
+        height: 45px;
+        font-weight: 500;
     }
 
     .contact-info strong, .contact-infO strong {
-      font-size: 28px;
+      font-size: 24px;
     }
 
     .footer-grid {
@@ -755,36 +825,35 @@
 
     .subscribe-section {
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
     }
 
     #subscribe-title {
-      font-size: 24px;
+      font-size: 18px;
       text-align: center;
     }
 
     #subscribe-email {
-      width: 100%;
-      font-size: 16px;
+      width: 90%;
+      font-size: 14px;
     }
-
+    
     #subscribe-button {
       width: 100%;
       font-size: 18px;
-      margin-top: 10px;
     }
 
     .footer-grid .footer-links {
       grid-template-columns: repeat(2, 1fr);
       gap: 20px 6rem;
-      padding-bottom: 8%;
+      padding-bottom: 10%;
       font-size: 16px;
     }
 
     .footer-bottom {
       margin-top: 10px;
       padding: 0%;
-        margin: 6% 2% 0% 2%;
+      margin: 10% 2% 0% 2%;
       flex-direction: column;
       align-items: center;
     }
@@ -824,12 +893,12 @@
  @media (max-width: 450px) {
   
        body {
-        background-position: top 24% left 54%, top right 90%;
+        background-position: top 20% left 54%, top right 90%;
         background-size: 40px auto, 180%;
     }
 
   .form-button {
-      padding-top: 70%;
+      padding-top: 90%;
     }
                 .footer-bottom p {
                   font-size: 14px;
@@ -841,7 +910,7 @@
           .footer-grid .footer-links {
         gap: 20px 2rem;
         
-        font-size: 14px;
+        font-size: 16px;
     }
   }
 
@@ -849,7 +918,9 @@
    @media (max-width: 350px) {
   
        body {
-       background-size: 40px auto, 210%;
+        
+        background-position: top 14% left 54%, top right 90%;
+       background-size: 20px auto, 210%;
     }
 
   .form-button {
@@ -860,7 +931,7 @@
       }
       .footer-grid .footer-links {
         gap: 20px 1rem;
-        font-size: 14px;
+        font-size: 16px;
     }
     .footer-bottom p{
       font-size: 12px;
