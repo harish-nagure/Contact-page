@@ -651,7 +651,7 @@
       .footer-grid .footer-links {
         display: grid;
         grid-template-columns: repeat(2, minmax(180px, 1fr));
-        gap: 30px 10rem;
+        gap: 30px 8rem;
         justify-items: baseline;
         text-align: left;
         align-self: center;
@@ -829,7 +829,11 @@
       .social-icons a{
         padding:0px 5px;
       }
-
+          .footer-grid .footer-links {
+        gap: 20px 2rem;
+        
+        font-size: 14px;
+    }
   }
 
 
@@ -845,6 +849,10 @@
     .social-icons a{
         padding: 5px;
       }
+      .footer-grid .footer-links {
+        gap: 20px 1rem;
+        font-size: 14px;
+    }
 
   }
 
