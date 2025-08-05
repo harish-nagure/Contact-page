@@ -795,7 +795,7 @@
       .social-icons a{
         margin: 0% 0%;
         padding: 0px 14px;
-        font-size: 36px;
+        font-size: 32px;
       }
     
   }
@@ -828,6 +828,7 @@
     
       .social-icons a{
         padding:0px 5px;
+        font-size: 26px;
       }
           .footer-grid .footer-links {
         gap: 20px 2rem;
